@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: #833AB4;
+background: linear-gradient(135deg, rgba(131, 58, 180, 1) 0%, rgba(192, 44, 105, 1) 40%, rgba(253, 29, 29, 0.87) 74%, rgba(252, 176, 69, 1) 100%);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #1c49bb;
+    color: #fff;
+    padding:15px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #47dde0;
+    color: black;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333333bb;
+    padding: 20px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: #b064c3;
+}
+
+.navbar ul li a:hover {
+    color: #1c49bb;
+    background-color: #ff6f61;
+}
+
+/* Main Content */
+.section {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 25px;
+    border: 2px solid #c7c6c6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+/* Buttons */
+button.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
