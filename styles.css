@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     color: #333;
     padding: 0;
     margin: 0;
+
 }
 
 /* Hero Section */
@@ -41,7 +43,7 @@ background: linear-gradient(135deg, rgba(131, 58, 180, 1) 0%, rgba(192, 44, 105,
     color: #fff;
     padding:15px 25px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
     font-size: 1.4rem;
@@ -55,8 +57,9 @@ background: linear-gradient(135deg, rgba(131, 58, 180, 1) 0%, rgba(192, 44, 105,
 
 /* Navigation */
 .navbar {
-    background-color: #333333bb;
+    background-color:transparent;
     padding: 20px 20px;
+    position: fixed;
 }
 
 .navbar ul {
@@ -127,4 +130,305 @@ button.btn {
     background-color: #333;
     color: #fff;
     font-size: 0.9rem;
+}
+
+/* updating code  */
+/* Home Section */
+#home {
+    text-align: center;
+}
+
+#home h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Features List */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%; /* Adjust for responsiveness */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Call-to-Action Button */
+#home .btn {
+    /* background-color: #ff6f61; */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#home .btn:hover {
+    background-color: #ff6f61;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image fits perfectly */
+    border: 4px solid #ff6f61;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* About Content */
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    background-color: aqua;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+    background-color:#1c49bb;
+    color: #fff;
+
+}
+
+/* Call-to-Action Button */
+#about .btn {
+    /* background-color: #ff6f61; */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#about .btn:hover {
+    background-color: #ff6f61;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allows vertical resizing */
+}
+
+/* Submit Button */
+#contact .btn {
+    background-color: #1c49bb;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contact .btn:hover {
+    background-color: #ff6f61;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links ul li a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    color: #1c49bb;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Copyright Notice */
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Quick Links */
+.quick-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.quick-links li a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.quick-links li a:hover {
+    color: #e05247;
 }
